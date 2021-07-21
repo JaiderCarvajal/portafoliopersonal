@@ -85,6 +85,10 @@ img {
     .nav-list {
         margin: 0 1rem;
     }
+
+    .projects-section-header {
+        font-size: 4rem;
+    }
 }
 
 /* Menu */
@@ -136,4 +140,43 @@ img {
     font-size: 3rem;
     font-weight: 200;
     color: yellow;
+}
+
+/* Seccion proyectos*/
+
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: green;
+    color: white;
+}
+
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid white;
+}
+
+/* Para el grid de la sección proyectos*/
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+/* Para otros dispositivos*/
+
+@media (max-width: 30.625em) {
+    .projects-section {
+        padding: 6rem 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
